@@ -27,6 +27,22 @@ public class Payroll
         }
          /**The method for calculating salary including bonus.Bonus is 10% of salary 
       */ 
+   public double calcBonus(double sal)
+   {
+       if(sal<=3000)
+       {System.out.println("Your salary was "+sal);
+       bonus=sal*10/100;
+       System.out.println("YOur calculated bonus is " + bonus);
+       setSalary(sal+bonus);
+      }
+       return Salary;
+   }
+   
+   //setter method for salary
+   public void setSalary(double sal)
+   {
+       Salary=sal;
+   }
         
         
      /**The getter for the Salary
