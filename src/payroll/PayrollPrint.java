@@ -17,10 +17,10 @@ public static void main(String[] args)
 {
 /* here assumed that 50 employee accounts can be created
  for the given bank */
-Payroll ac[]=new Payroll[50];
+
 Scanner sc=new Scanner(System.in);
-for(int i=0;i<ac.length;i++)
-{
+
+
 System.out.println("Please enter the employee name:");
 String name=sc.next();//add code
 System.out.println("Please enter the salary: salary <=3000");
@@ -33,13 +33,13 @@ if(n==0)
 {System.out.println("Please enter the salary: salary <=3000");
        
  sal=sc.nextDouble();}
-else{
-System.out.println("salary bfore bonus "+sal);}
+Payroll ac =new Payroll();
+System.out.println("salary bfore bonus "+sal);
 
 
 
-System.out.println("The final Salary including bonus is: " + ac[i].calcBonus(sal));         
+System.out.println("The final Salary including bonus is: " + ac.calcBonus(sal));         
 
-}}}}
+}}
 
-
+}
