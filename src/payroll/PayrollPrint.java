@@ -19,7 +19,8 @@ public static void main(String[] args)
  for the given bank */
 
 Scanner sc=new Scanner(System.in);
-
+for(int i=0;i<41;i++)
+{
 
 System.out.println("Please enter the employee name:");
 String name=sc.next();//add code
@@ -32,14 +33,14 @@ int n=sc.nextInt();
 if(n==0)
 {System.out.println("Please enter the salary: salary <=3000");
        
- sal=sc.nextDouble();}
-Payroll ac =new Payroll();
+ sal=sc.nextDouble();}}
+Payroll ac =new Payroll(sal,name);
 System.out.println("salary bfore bonus "+sal);
 
 
 
 System.out.println("The final Salary including bonus is: " + ac.calcBonus(sal));         
 
-}}
+}}}
 
-}
+
